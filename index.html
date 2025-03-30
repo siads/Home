@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | [Seu Nome] - Analista de Dados</title>
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-350689257"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-350689257'); // Substitua pelo SEU ID do GA4
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2c3e50; }
+        .projeto { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        button { background: #3498db; color: white; border: none; padding: 8px 15px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cassia</h1>
+        <p>Analista de Dados | SQL | Python | GA4 | Power BI</p>
+    </header>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto">
+            <h3>Análise de Vendas</h3>
+            <p>Dashboard em Power BI com dados de vendas de e-commerce.</p>
+            <button onclick="gtag('event', 'clique', { 'event_category': 'projeto', 'event_label': 'vendas_powerbi' });">
+                Ver Detalhes
+            </button>
+        </div>
+        <div class="projeto">
+            <h3>Segmentação de Clientes com Python</h3>
+            <p>Clusterização usando K-means e visualização com Matplotlib.</p>
+            <button onclick="gtag('event', 'clique', { 'event_category': 'projeto', 'event_label': 'cluster_python' });">
+                Ver Detalhes
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contato: siadsant@gmail.com</p>
+    </footer>
+</body>
+</html>
