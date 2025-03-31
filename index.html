@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | [Seu Nome] - Analista de Dados</title>
-
-  <!-- Google tag (gtag.js) -->
+    <title>Portfólio | Cassia - Analista de Dados</title>
+   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SL3DBCRBHB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -13,8 +12,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-SL3DBCRBHB');
-</script>
-
+    </script>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
         h1 { color: #2c3e50; }
@@ -23,31 +21,37 @@
     </style>
 </head>
 <body>
+</head>
+<body>
     <header>
         <h1>Cassia</h1>
-        <p>Analista de Dados | SQL | Python | GA4 | Power BI</p>
+        <p>Analista de Dados | Transformando dados em decisões</p>
     </header>
 
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="projeto">
-            <h3>Análise de Vendas</h3>
-            <p>Dashboard em Power BI com dados de vendas de e-commerce.</p>
-            <button onclick="gtag('event', 'clique', { 'event_category': 'projeto', 'event_label': 'vendas_powerbi' });">
-                Ver Detalhes
-            </button>
-        </div>
-        <div class="projeto">
-            <h3>Segmentação de Clientes com Python</h3>
-            <p>Clusterização usando K-means e visualização com Matplotlib.</p>
-            <button onclick="gtag('event', 'clique', { 'event_category': 'projeto', 'event_label': 'cluster_python' });">
-                Ver Detalhes
-            </button>
+    <section id="destaque">
+        <div class="metricas-ga4">
+            <!-- Espaço para embedar um gráfico do Looker Studio com dados do GA4 -->
+            <iframe width="600" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiNmYyNjk5MmItNzVmMC00N2QyLThhYTAtNjQxOWViMDYxMmJmIiwidCI6IjEwOGYzNTgyLWY3NTUtNDY1MS1iY2NkLTc2YjkzMmMwZmY2OSJ9&pageName=ReportSection447d81a1e2568281279a"></iframe>
         </div>
     </section>
 
-    <footer>
-        <p>Contato: siadsant@gmail.com</p>
-    </footer>
+    <section id="projetos">
+        <h2>Projetos Recentes</h2>
+        <div class="projeto" 
+             onclick="gtag('event', 'click', {'nome': 'Otimização de Campanhas'});">
+            <h3>Otimização de Campanhas</h3>
+            <p>Análise de ROI em Google Ads usando Python + Regressão Linear.</p>
+            <button>Ver Análise</button>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h5>Deixe seu contato</h5>
+        <form id="form-contato" 
+              onsubmit="gtag('event', 'contato_enviado', {'method': 'form'});">
+            <input type="email" placeholder="Seu e-mail" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>
